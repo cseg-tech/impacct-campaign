@@ -36,7 +36,56 @@ Campaign builder for developed for IMPACCT Brooklyn
   python -m flask run
   ```
 * Now head over to [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
+* Close the application
+  ```
+  Ctrl+c
+  ```
+* Close the virtual environment
+  ```
+  deactivate
+  ```
 
+## Getting Started for Mac
+
+* Create and activate an environment
+  * In Command Prompt, navigate to the flaskBackend folder
+    ```
+    ...
+    cd impacct-campaign
+    cd flaskBackend
+    ```
+  * Install virtualenv
+    ```
+    pip install virtualenv
+    ```
+  * Create an environment
+    ```
+    virtual env
+    ```
+  * Activate the environment
+    ```
+    .\env\Scripts\activate.bat
+    ```
+
+* Install the necessary modules
+  * Install Flask
+    ```
+    pip install Flask
+    ```
+* Run the application
+  ```
+  set FLASK_APP=app.py
+  flask run
+  ```
+* Now head over to [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
+* Close the application
+  ```
+  Ctrl+c
+  ```
+* Close the virtual environment
+  ```
+  deactivate
+  ```
 
 ## Authors
 
