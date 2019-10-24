@@ -35,6 +35,7 @@ Campaign builder for developed for IMPACCT Brooklyn
   set FLASK_APP=app.py
   python -m flask run
   ```
+  [Link](http://127.0.0.1:5000/api/simplelist)
 
 
 ## Authors
