@@ -3,9 +3,9 @@ Campaign builder for developed for IMPACCT Brooklyn
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://python.org)
 
-## Getting Started
+## Getting Started for Windows
 
-* Create and Activate an environment
+* Create and activate an environment
   * In Command Prompt, navigate to the flaskBackend folder
     ```
     ...
