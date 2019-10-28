@@ -14,7 +14,7 @@ class App extends Component {
 
   fetchData = () => {
 
-    fetch('http://localhost:5000/api/simplelist')
+    fetch('http://impacct-test.herokuapp.com/getall')
       .then(response => response.json())
       .then(data => this.setState({ data }));
 
