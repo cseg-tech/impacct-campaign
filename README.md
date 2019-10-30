@@ -1,9 +1,9 @@
 # impacct-campaign
-Campaign builder for developed for IMPACCT Brooklyn
+Campaign builder developed for IMPACCT Brooklyn
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://python.org)
 
-## Getting Started for Windows
+## Flask: Getting Started for Windows
 
 * Create and activate an environment
   * In Command Prompt, navigate to the flaskBackend folder
@@ -16,7 +16,7 @@ Campaign builder for developed for IMPACCT Brooklyn
     ```
     pip install virtualenv
     ```
-  * Create an environment (1 time)
+  * Create an environment (first time only)
     ```
     virtual env
     ```
@@ -26,9 +26,10 @@ Campaign builder for developed for IMPACCT Brooklyn
     ```
 
 * Install the necessary modules
-  * Install Flask
+  * Install Flask and other modules
     ```
     pip install Flask
+    pip install flask_cors
     ```
   * Install anything else prompted by errors
 * Run the application
@@ -46,7 +47,7 @@ Campaign builder for developed for IMPACCT Brooklyn
   deactivate
   ```
 
-## Getting Started for Mac
+## Flask: Getting Started for Mac
 
 * Create and activate an environment
   * In Command Prompt, navigate to the flaskBackend folder
@@ -57,25 +58,31 @@ Campaign builder for developed for IMPACCT Brooklyn
     ```
   * Install virtualenv
     ```
-    pip install virtualenv
+    pip3 install virtualenv
     ```
-  * Create an environment
+  * Create an environment (first time only)
     ```
-    virtual env
+    python3 -m virtualenv venv
+    ```
+    or
+    ```
+    python3 -m venv venv
     ```
   * Activate the environment
     ```
-    .\env\Scripts\activate.bat
+    . venv/bin/activate
     ```
 
 * Install the necessary modules
   * Install Flask
     ```
-    pip install Flask
+    pip3 install Flask
+    pip3 install flask_cors
     ```
+  * Install anything else prompted by errors
 * Run the application
   ```
-  set FLASK_APP=app.py
+  export FLASK_APP=app.py
   flask run
   ```
 * Now head over to [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
