@@ -16,7 +16,7 @@ Campaign builder for developed for IMPACCT Brooklyn
     ```
     pip install virtualenv
     ```
-  * Create an environment
+  * Create an environment (1 time)
     ```
     virtual env
     ```
@@ -30,6 +30,7 @@ Campaign builder for developed for IMPACCT Brooklyn
     ```
     pip install Flask
     ```
+  * Install anything else prompted by errors
 * Run the application
   ```
   set FLASK_APP=app.py
