@@ -1,99 +1,49 @@
 # impacct-campaign
 Campaign builder developed for IMPACCT Brooklyn
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://python.org)
+## React App Setup:
 
-## Flask: Getting Started for Windows
+* Navigate to impacct-campaign/react-test
+* Install react-router-dom using ```npm install react-router-dom```
+* ```npm start```
 
-* Create and activate an environment
-  * In Command Prompt, navigate to the flaskBackend folder
-    ```
-    ...
-    cd impacct-campaign
-    cd flaskBackend
-    ```
-  * Install virtualenv
-    ```
-    pip install virtualenv
-    ```
-  * Create an environment (first time only)
-    ```
-    virtual env
-    ```
-  * Activate the environment
-    ```
-    .\env\Scripts\activate.bat
-    ```
+## Flask Setup for Windows:
 
-* Install the necessary modules
-  * Install Flask and other modules
-    ```
-    pip install Flask
-    pip install flask_cors
-    ```
-  * Install anything else prompted by errors
+* Navigate to impacct-campaign/flaskBackend
+* Create an environment (first time only) using ```virtual env```
+* Activate the environment using ```.\env\Scripts\activate.bat```
+* Install Flask and other modules
+  ```
+  pip install Flask
+  pip install flask_cors
+  ```
 * Run the application
   ```
   set FLASK_APP=app.py
   python -m flask run
   ```
-* Now head over to [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
-* Close the application
-  ```
-  Ctrl+c
-  ```
-* Close the virtual environment
-  ```
-  deactivate
-  ```
+* [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
+* To close the application: ```Ctrl+c```
+* To close the virtual environment: ```deactivate```
 
-## Flask: Getting Started for Mac
+## Flask Setup for Mac:
 
-* Create and activate an environment
-  * In Command Prompt, navigate to the flaskBackend folder
-    ```
-    ...
-    cd impacct-campaign
-    cd flaskBackend
-    ```
-  * Install virtualenv
-    ```
-    pip3 install virtualenv
-    ```
-  * Create an environment (first time only)
-    ```
-    python3 -m virtualenv venv
-    ```
-    or
-    ```
-    python3 -m venv venv
-    ```
-  * Activate the environment
-    ```
-    . venv/bin/activate
-    ```
-
-* Install the necessary modules
-  * Install Flask
-    ```
-    pip3 install Flask
-    pip3 install flask_cors
-    ```
-  * Install anything else prompted by errors
+* Navigate to impacct-campaign/flaskBackend
+* Create an environment (first time only) using ```python3 -m virtualenv venv``` or ```python3 -m venv venv```
+* Activate the environment using ```. venv/bin/activate```
+* Install Flask and other modules
+  ```
+  pip3 install Flask
+  pip3 install flask_cors
+  ```
 * Run the application
   ```
   export FLASK_APP=app.py
   flask run
   ```
-* Now head over to [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
-* Close the application
-  ```
-  Ctrl+c
-  ```
-* Close the virtual environment
-  ```
-  deactivate
-  ```
+* [http://127.0.0.1:5000/api/simplelist](http://127.0.0.1:5000/api/simplelist)
+* To close the application: ```Ctrl+c```
+* To close the virtual environment: ```deactivate```
 
 ## Authors
 
