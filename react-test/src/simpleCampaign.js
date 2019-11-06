@@ -16,9 +16,10 @@ class App extends Component {
 
     fetch('http://impacct-test.herokuapp.com/getall')
       .then(response => response.json())
-      .then(data => this.setState({ data }));
-
-      console.log(this.state.data);
+      .then(data => {
+        this.setState({ data });
+        console.log(this.state.data);
+      });
     //fetch('http://localhost:5000/api/simplelist').then(response => response.json()).then(data =>console.log(response))
       // Do something with response
 
