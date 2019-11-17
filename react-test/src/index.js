@@ -22,11 +22,10 @@ const routing = (
           <Link to="/complexCampaign">Complex Campaign</Link>
         </li>
       </ul>
-      
+      </div>
+      </div>
       <Route path="/simpleCampaign" component={simpleCampaign} />
       <Route path="/complexCampaign" component={complexCampaign} />
-  </div>
-</div>
     </div>
   </Router>
 )
