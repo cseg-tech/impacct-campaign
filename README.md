@@ -5,7 +5,9 @@ Campaign builder developed for IMPACCT Brooklyn
 
 
 
-
+## Run fullstack solution
+* For development, ```python run.py```
+* For production, ```python wsgi.py```
 
 
 ## React App Setup:

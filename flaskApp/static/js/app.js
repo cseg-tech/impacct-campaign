@@ -10,10 +10,10 @@ class App extends Component {
       message: "Hello World",
       data: null
     }
+    this.fetchData = this.fetchData.bind(this);
   }
 
-  fetchData = () => {
-
+  fetchData () {
     fetch('http://impacct-test.herokuapp.com/getall')
       .then(response => response.json())
       .then(data => {
