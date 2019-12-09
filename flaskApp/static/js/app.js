@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 class App extends Component {
 
   constructor() {
@@ -21,15 +22,6 @@ class App extends Component {
         console.log(this.state.data);
       });
 
-      // console.log(this.state.data);
-    //fetch('http://localhost:5000/api/simplelist').then(response => response.json()).then(data =>console.log(response))
-      // Do something with response
-
-    /*
-    fetch('',{mode: 'no-cors'})
-        .then(response => response.json())
-        .then(data => console.log(data));
-    */
   }
   render() {
     return (
