@@ -45,7 +45,6 @@ class coalitionAgainstTenantHarrassment extends React.Component {
     }); 
   }
 
-
   render() {
     let {serverData} = this.state;
     return (
@@ -85,30 +84,4 @@ class coalitionAgainstTenantHarrassment extends React.Component {
   
 }
 
-
-/* 
-      {
-        this.state.serverData ? (
-    <p>//JSON.stringify(this.state.serverData)
-      {
-      this.state.serverData.map((dataMember) => (
-        JSON.stringify(dataMember)
-      ))
-      }
-    </p>
-    
-    ):(
-    <p>No data yet</p>
-    )
-      }
-  
-*/
-
 export default coalitionAgainstTenantHarrassment
-
-//ReactDOM.render(<App />, document.getElementById('container'));
-
-
-//render() {
-//    return <h1>Complex Campaign</h1>
-//  }

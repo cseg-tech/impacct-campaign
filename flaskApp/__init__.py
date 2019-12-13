@@ -3,11 +3,37 @@ import sys
 
 application = Flask(__name__, static_folder="./static/dist", template_folder="./static")
 
+def sendData():
+    data = request.get_json(force=True)
+    return {"response": [data,data,data]}
+
 @application.route("/api/coalitionSearch", methods=['POST'])
 def coalitionSearch():
-	data = request.get_json(force=True)
-	print(data)
-	return {"response": [data,data]}
+	return sendData()
+
+@application.route("/api/nyattorneySearch", methods=['POST'])
+def nyattorneySearch():
+	return sendData()
+
+@application.route("/api/speculationWatchlistSearch", methods=['POST'])
+def speculationWatchlistSearch():
+	return sendData()
+
+@application.route("/api/vacateOrdersSearch", methods=['POST'])
+def vacateOrdersSearch():
+    return sendData()
+
+@application.route("/api/stabilizingSearch", methods=['POST'])
+def stabilizingSearch():
+	return sendData()
+
+@application.route("/api/righttocounselSearch", methods=['POST'])
+def righttocounselSearch():
+	return sendData()
+
+
+
+
 
 @application.route("/api/simplelist", methods=['GET'])
 def simplelist():
