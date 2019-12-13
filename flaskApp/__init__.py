@@ -1,7 +1,13 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 import sys
 
 application = Flask(__name__, static_folder="./static/dist", template_folder="./static")
+
+@application.route("/api/coalitionSearch", methods=['POST'])
+def coalitionSearch():
+	data = request.get_json(force=True)
+	print(data)
+	return {"response": [data,data]}
 
 @application.route("/api/simplelist", methods=['GET'])
 def simplelist():
