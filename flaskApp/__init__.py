@@ -66,7 +66,7 @@ def speculationWatchlistSearch():
     borough = data['borough']
     buildings = LL7_qualified.query.filter_by(postcode=zipcode).filter_by(boro=borough)
 
-    return jsonify(list(map(lambda x:x.serialize(), buildings)))
+    return {"response": list(map(lambda x:x.serialize(), buildings))}
 
 @application.route("/api/vacateOrdersSearch", methods=['POST'])
 def vacateOrdersSearch():
