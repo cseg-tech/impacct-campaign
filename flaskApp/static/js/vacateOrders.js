@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { JsonToTable } from "react-json-to-table";
 
 class vacateOrders extends React.Component {
   constructor() {
@@ -71,7 +72,7 @@ class vacateOrders extends React.Component {
         {
           serverData ? 
           serverData.map((data) => (
-            <p>{JSON.stringify(data)}</p>
+            <p><JsonToTable json={data} /></p>
           ))
           :
           (
