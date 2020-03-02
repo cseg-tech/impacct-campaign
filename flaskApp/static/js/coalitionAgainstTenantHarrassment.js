@@ -50,6 +50,7 @@ class coalitionAgainstTenantHarrassment extends React.Component {
     let {serverData} = this.state;
     return (
       <div style={{position: "absolute", right:"200px"}}>
+        <p style={{right: "200px"}}>zipcode</p>
         <input 
           type="text" 
           name="zipcodeBox" 
@@ -58,6 +59,7 @@ class coalitionAgainstTenantHarrassment extends React.Component {
           onChange={ this.handleChange } 
         />
         
+        <p style={{right: "200px"}}>borough</p>
         <input 
           type="text" 
           name="boroughBox" 
