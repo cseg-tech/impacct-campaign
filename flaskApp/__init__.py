@@ -55,8 +55,8 @@ def sendData():
 def coalitionSearch():
 	return sendData()
 
-@application.route("/api/nyattorneySearch", methods=['POST'])
-def nyattorneySearch():
+@application.route("/api/worstEvictorsSearch", methods=['POST'])
+def worstEvictorsSearch():
 	return sendData()
 
 @application.route("/api/speculationWatchlistSearch", methods=['POST'])
