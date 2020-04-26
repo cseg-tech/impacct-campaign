@@ -24,14 +24,16 @@ class rightToCounsel extends React.Component {
   publish() {
     document.getElementById("zipcode").innerHTML = this.state.zipcodeBox;
     document.getElementById("borough").innerHTML = this.state.boroughBox;
-    console.log( this.state.zipcodeBox, this.state.boroughBox );
+    document.getElementById("test").innerHTML = this.state.testBox;
+    console.log( this.state.zipcodeBox, this.state.boroughBox, this.state.testBox );
   }
 
   fetchResults() {
     let that = this;
     let payload = {
       "zipcode": this.state.zipcodeBox,
-      "borough": this.state.boroughBox
+      "borough": this.state.boroughBox,
+      "test": this.state.testBox
     };
     let uri = "./api/righttocounselSearch";
     fetch(uri, {
@@ -65,10 +67,19 @@ class rightToCounsel extends React.Component {
           value={ this.state.boroughBox } 
           onChange={ this.handleChange } 
         />
+
+        <input 
+          type="text" 
+          name="testBox" 
+          placeholder="Enter test here..." 
+          value={ this.state.testBox }
+          onChange={ this.handleChange } 
+        />
         
         <button value="Send" onClick={ this.fetchResults }>Search</button>
         <p id = "zipcode"></p>
         <p id = "borough"></p>
+        <p id = "test"></p>
         {
           serverData ? 
           serverData.map((data) => (

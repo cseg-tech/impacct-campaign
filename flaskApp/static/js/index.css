@@ -13,10 +13,18 @@ code {
 hr {
     display: block;
     height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border: 2px solid black;
+    margin: auto;
     padding: 0;
+    width: 95%;
+    border-radius: 2px;
+}
+
+h2 {
+  font-family: fantasy;
+  color: mediumseagreen;
+  letter-spacing: 1.5px;
+  font-size: 50px;
 }
 
 .parent{
@@ -24,7 +32,7 @@ hr {
 }
 /* Dropdown Button */
 .dropbtn {
-  background-color: #6BADD1;
+  background-color: black;
   color: white;
   padding: 8px;
   font-size: 16px;
@@ -32,6 +40,7 @@ hr {
 
   width: 147px;
   height: 40px;
+  border-radius: 10px;
 }
 
 .header {
@@ -69,4 +78,4 @@ hr {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: black;}

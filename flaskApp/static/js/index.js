@@ -13,13 +13,13 @@ const routing = (
   <Router>
     <div class="parent">
       <div class="header">
-        <h2>Organizing Tools</h2>
+        <h2>Organizing Tools NYC</h2>
       </div>
       <div class = "tagline">
         <p>To begin searching for specific campaigns, please choose one of the dropdown options. Then enter the necessary location delimiters and hit 'search'.</p>
       </div>
       <hr/>
-      <div class="dropdown">
+      <div class="dropdown" style={{marginLeft: "-160px", marginTop: "40px"}}>
         <button class="dropbtn">Options</button>
           <div class="dropdown-content">
             <ul>
