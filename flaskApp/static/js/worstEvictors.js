@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { JsonToTable } from "react-json-to-table";
 
-class stabilizingNYC extends React.Component {
+class worstEvictors extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -33,7 +33,7 @@ class stabilizingNYC extends React.Component {
       "zipcode": this.state.zipcodeBox,
       "borough": this.state.boroughBox
     };
-    let uri = "./api/stabilizingSearch";
+    let uri = "./api/nyattorneySearch";
     fetch(uri, {
       method: "post",
       body: JSON.stringify(payload)
@@ -65,14 +65,14 @@ class stabilizingNYC extends React.Component {
           value={ this.state.boroughBox } 
           onChange={ this.handleChange } 
         />
-
+        
         <button value="Send" onClick={ this.fetchResults }>Search</button>
         <p id = "zipcode"></p>
         <p id = "borough"></p>
         {
           serverData ? 
           serverData.map((data) => (
-            <p> <JsonToTable json={data} /></p>
+            <p><JsonToTable json={data} /></p>
           ))
           :
           (
@@ -85,5 +85,4 @@ class stabilizingNYC extends React.Component {
   
 }
 
-
-export default stabilizingNYC
+export default worstEvictors

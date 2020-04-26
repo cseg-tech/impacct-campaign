@@ -6,20 +6,19 @@ import App from './App'
 import coalitionAgainstTenantHarrassment from './coalitionAgainstTenantHarrassment'
 import speculationWatchlist from './speculationWatchlist'
 import vacateOrders from './vacateOrders'
-import rightToCounsel from './rightToCounsel'
-import NYAttorneyGeneralWorstLandlord from './NYAttorneyGeneralWorstLandlord'
+import worstEvictors from './worstEvictors'
 import stabilizingNYC from './stabilizingNYC'
 const routing = (
   <Router>
     <div class="parent">
       <div class="header">
-        <h2>Organizing Tools NYC</h2>
+        <h2>Organizing Tools</h2>
       </div>
       <div class = "tagline">
         <p>To begin searching for specific campaigns, please choose one of the dropdown options. Then enter the necessary location delimiters and hit 'search'.</p>
       </div>
       <hr/>
-      <div class="dropdown" style={{marginLeft: "-160px", marginTop: "40px"}}>
+      <div class="dropdown">
         <button class="dropbtn">Options</button>
           <div class="dropdown-content">
             <ul>
@@ -36,10 +35,7 @@ const routing = (
                 <Link to="/vacateOrders">Vacate Orders</Link>
               </li>
               <li>
-                <Link to="/rightToCounsel">Right to Counsel</Link>
-              </li>
-              <li>
-                <Link to="/NYAttorneyGeneralWorstLandlord">NY Attorney General Worst Landlord</Link>
+                <Link to="/worstEvictors">Worst Evictors</Link>
               </li>
               <li>
                 <Link to="/stabilizingNYC">Stabilizing NYC</Link>
@@ -51,8 +47,7 @@ const routing = (
       <Route path="/coalitionAgainstTenantHarrassment" component={coalitionAgainstTenantHarrassment} />
       <Route path="/speculationWatchlist" component={speculationWatchlist} />
       <Route path="/vacateOrders" component={vacateOrders} />
-      <Route path="/rightToCounsel" component={rightToCounsel} />
-      <Route path="/NYAttorneyGeneralWorstLandlord" component={NYAttorneyGeneralWorstLandlord} />
+      <Route path="/worstEvictors" component={worstEvictors} />
       <Route path="/stabilizingNYC" component={stabilizingNYC} />
       
     </div>
