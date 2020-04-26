@@ -65,7 +65,7 @@ class stabilizingNYC extends React.Component {
           value={ this.state.boroughBox } 
           onChange={ this.handleChange } 
         />
-        
+
         <button value="Send" onClick={ this.fetchResults }>Search</button>
         <p id = "zipcode"></p>
         <p id = "borough"></p>

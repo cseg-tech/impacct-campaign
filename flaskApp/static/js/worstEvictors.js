@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { JsonToTable } from "react-json-to-table";
 
-class rightToCounsel extends React.Component {
+class worstEvictors extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -33,7 +33,7 @@ class rightToCounsel extends React.Component {
       "zipcode": this.state.zipcodeBox,
       "borough": this.state.boroughBox
     };
-    let uri = "./api/righttocounselSearch";
+    let uri = "./api/nyattorneySearch";
     fetch(uri, {
       method: "post",
       body: JSON.stringify(payload)
@@ -85,5 +85,4 @@ class rightToCounsel extends React.Component {
   
 }
 
-
-export default rightToCounsel
+export default worstEvictors
