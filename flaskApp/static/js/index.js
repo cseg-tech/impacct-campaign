@@ -6,8 +6,7 @@ import App from './App'
 import coalitionAgainstTenantHarrassment from './coalitionAgainstTenantHarrassment'
 import speculationWatchlist from './speculationWatchlist'
 import vacateOrders from './vacateOrders'
-import rightToCounsel from './rightToCounsel'
-import NYAttorneyGeneralWorstLandlord from './NYAttorneyGeneralWorstLandlord'
+import worstEvictors from './worstEvictors'
 import stabilizingNYC from './stabilizingNYC'
 const routing = (
   <Router>
@@ -36,10 +35,7 @@ const routing = (
                 <Link to="/vacateOrders">Vacate Orders</Link>
               </li>
               <li>
-                <Link to="/rightToCounsel">Right to Counsel</Link>
-              </li>
-              <li>
-                <Link to="/NYAttorneyGeneralWorstLandlord">NY Attorney General Worst Landlord</Link>
+                <Link to="/worstEvictors">Worst Evictors</Link>
               </li>
               <li>
                 <Link to="/stabilizingNYC">Stabilizing NYC</Link>
@@ -51,8 +47,7 @@ const routing = (
       <Route path="/coalitionAgainstTenantHarrassment" component={coalitionAgainstTenantHarrassment} />
       <Route path="/speculationWatchlist" component={speculationWatchlist} />
       <Route path="/vacateOrders" component={vacateOrders} />
-      <Route path="/rightToCounsel" component={rightToCounsel} />
-      <Route path="/NYAttorneyGeneralWorstLandlord" component={NYAttorneyGeneralWorstLandlord} />
+      <Route path="/worstEvictors" component={worstEvictors} />
       <Route path="/stabilizingNYC" component={stabilizingNYC} />
       
     </div>
