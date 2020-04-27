@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { JsonToTable } from "react-json-to-table";
 
 class coalitionAgainstTenantHarrassment extends React.Component {
   constructor() {
@@ -49,6 +50,7 @@ class coalitionAgainstTenantHarrassment extends React.Component {
     let {serverData} = this.state;
     return (
       <div style={{position: "absolute", right:"200px"}}>
+        <p style={{right: "200px"}}>zipcode</p>
         <input 
           type="text" 
           name="zipcodeBox" 
@@ -57,6 +59,7 @@ class coalitionAgainstTenantHarrassment extends React.Component {
           onChange={ this.handleChange } 
         />
         
+        <p style={{right: "200px"}}>borough</p>
         <input 
           type="text" 
           name="boroughBox" 
@@ -71,7 +74,7 @@ class coalitionAgainstTenantHarrassment extends React.Component {
         {
           serverData ? 
           serverData.map((data) => (
-            <p>{JSON.stringify(data)}</p>
+            <p><JsonToTable json={data} /></p>
           ))
           :
           (

@@ -41,6 +41,7 @@ hr {
 .dropdown {
   position: absolute;
   left: 200px;
+  /* left: 50%;*/
 }
 
 /* Dropdown Content (Hidden by Default) */
