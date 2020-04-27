@@ -11,10 +11,12 @@ class vacateOrders extends React.Component {
       cdBox: null,
       precinctBox: null,
       ctBox: null,
+      rtcCheck: false,
     };
     
     this.publish = this.publish.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.toggle = this.toggle.bind(this);
     this.fetchResults = this.fetchResults.bind(this);
   }
 
@@ -24,13 +26,21 @@ class vacateOrders extends React.Component {
     });
   }
 
+  toggle({ target }) {
+    console.log(target.checked);
+    this.setState({
+      [target.name]: target.checked
+    });
+  }
+
   publish() {
     document.getElementById("zipcode").innerHTML = this.state.zipcodeBox;
     document.getElementById("borough").innerHTML = this.state.boroughBox;
     document.getElementById("cd").innerHTML = this.state.cdBox;
     document.getElementById("precinct").innerHTML = this.state.precinctBox;
     document.getElementById("ct").innerHTML = this.state.ctBox;
-    console.log( this.state.zipcodeBox, this.state.boroughBox, this.state.cdBox, this.state.precinctBox, this.state.ctBox );
+    document.getElementById("rtc").innerHTML = this.state.rtcCheck;
+    console.log( this.state.zipcodeBox, this.state.boroughBox, this.state.cdBox, this.state.precinctBox, this.state.ctBox, this.state.rtcCheck );
   }
 
   fetchResults() {
@@ -40,7 +50,8 @@ class vacateOrders extends React.Component {
       "borough": this.state.boroughBox,
       "cd": this.state.cdBox,
       "precinct": this.state.precinctBox,
-      "ct": this.state.ctBox
+      "ct": this.state.ctBox,
+      "rtc": this.state.rtcCheck,
     };
     let uri = "./api/vacateOrdersSearch";
     fetch(uri, {
@@ -142,11 +153,17 @@ class vacateOrders extends React.Component {
           />
         </div>
 
-        <div id="checkbox" style={{display: "inline-block", marginLeft: "5px", marginRight: "5px"}}>
+        <div id="rtcCheck" style={{display: "inline-block", marginLeft: "5px", marginRight: "5px"}}>
           <label for="rightTo">Right to Counsel</label><br />
-          <input type="checkbox" id="rightTo" />         
+          <input 
+            type="checkbox" 
+            id="rightTo" 
+            name="rtcCheck"
+            value={ this.state.rtcCheck }
+            onChange={ this.toggle }
+          />         
         </div>
-
+        
         </div>
 
    
