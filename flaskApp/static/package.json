@@ -30,6 +30,7 @@
     "node-sass": "^4.13.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-cookies": "^0.1.1",
+    "react-json-to-table": "^0.1.5",
     "react-lazy-hero": "^2.0.0",
     "react-router-dom": "^5.1.2",
     "reactjs-popup": "^1.5.0",
