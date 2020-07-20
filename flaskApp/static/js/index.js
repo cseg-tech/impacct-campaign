@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import App from './app'
-import Map_Sad from './map'
+import App from './App'
 import coalitionAgainstTenantHarrassment from './coalitionAgainstTenantHarrassment'
 import speculationWatchlist from './speculationWatchlist'
 import vacateOrders from './vacateOrders'
@@ -17,9 +16,6 @@ const routing = (
       </div>
       <div class = "tagline">
         <p>To begin searching for specific campaigns, please choose one of the dropdown options. Then enter the necessary location delimiters and hit 'search'.</p>
-        <li>
-          <Map_Sad/>
-        </li>
       </div>
       <hr/>
       <div class="dropdown">
@@ -46,10 +42,8 @@ const routing = (
               </li>
             </ul>
           </div>
-      </div> <div><Map_Sad/></div>
+      </div>
 
-      <Route path="/map" component={Map_Sad} />
-      <Route path="/App" component={App} />
       <Route path="/coalitionAgainstTenantHarrassment" component={coalitionAgainstTenantHarrassment} />
       <Route path="/speculationWatchlist" component={speculationWatchlist} />
       <Route path="/vacateOrders" component={vacateOrders} />
