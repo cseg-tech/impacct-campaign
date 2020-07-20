@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Map_Sad from './map';
 
-
+/*
 class App extends Component {
 
   constructor() {
@@ -45,5 +46,9 @@ class App extends Component {
     );
   }
 }
+*/
+//export default App;
 
-export default App;
+export default function App() {
+  return( <div> <Map_Sad/> </div> );
+}
